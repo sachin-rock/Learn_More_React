@@ -13,7 +13,16 @@ console.log(data)
 
 
   return (
-    <div>Product</div>
+    <div>{
+        data.map((item)=>{
+            return(
+                
+                
+                <li> {item.title}</li>
+                
+            )
+        })
+        }</div>
   )
 }
 

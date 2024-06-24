@@ -1,1 +1,2 @@
 ## Custom Hooks are a powerful feature of React that allows you to encapsulate common functionality into reusable functions.
+# using custom hooks, you can abstract away complex logic into simpler, reusable pieces, making your components cleaner and more manageable.
