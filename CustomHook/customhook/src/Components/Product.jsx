@@ -1,29 +1,21 @@
-import React from 'react'
-import useFetch from '../hooks/useFetch'
-import {product_api} from '../constants/apiUrls'
+import React from "react";
+import useFetch from "../hooks/useFetch";
+import { product_api } from "../constants/apiUrls";
 
 const Product = () => {
-   
-const { data, error } = useFetch(product_api);
+  const { data, error } = useFetch(product_api);
 
-if (error) return <p>Error: {error}</p>;
+  if (error) return <p>Error: {error}</p>;
 
-console.log(data)
-
-
+  console.log(data);
 
   return (
-    <div>{
-        data.map((item)=>{
-            return(
-                
-                
-                <li> {item.title}</li>
-                
-            )
-        })
-        }</div>
-  )
-}
+    <div>
+      {data.map((item) => {
+        return <li> {item.title}</li>;
+      })}
+    </div>
+  );
+};
 
-export default Product
+export default Product;
