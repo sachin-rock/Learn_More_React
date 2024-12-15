@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './App.css'
+import "./App.css";
 import Toast from "./Toast";
 
 const App = () => {
@@ -21,8 +21,10 @@ const App = () => {
       <button onClick={() => handleMessage("This is info Message", "Info")}>
         Info
       </button>
-      <button onClick={() => handleMessage("This is Success Message", "Success")}>
-      Success
+      <button
+        onClick={() => handleMessage("This is Success Message", "Success")}
+      >
+        Success
       </button>
       <button onClick={() => handleMessage("This is Error Message", "Error")}>
         Error
